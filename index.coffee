@@ -5,7 +5,7 @@ module.exports = () ->
 	(req, res, next) ->
 
 		contentType = req.headers['content-type'] || '';
-		[contentType] = str.split ';'
+		[contentType] = contentType.split ';'
 
 
 		return next() unless contentType is "application/xml"
