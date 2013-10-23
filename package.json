@@ -1,0 +1,17 @@
+{
+  "name": "connect-xml-bodyparser",
+  "version": "0.0.1",
+  "main": "index.coffee",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/falsecz/connect-xml-bodyparser.git"
+  },
+  "author": "bender@false.cz",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/falsecz/connect-xml-bodyparser/issues"
+  },
+  "dependencies": {
+    "xml2js": "~0.2.8"
+  }
+}
