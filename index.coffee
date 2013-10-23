@@ -17,4 +17,5 @@ module.exports = () ->
 					err.status = 400
 					return next err
 				req.body = json
+				req.rawBody = buf
 				next()
