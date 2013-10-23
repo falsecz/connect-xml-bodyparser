@@ -3,7 +3,12 @@ xml2js = require 'xml2js'
 module.exports = () ->
 
 	(req, res, next) ->
-		return next() unless "application/xml" is req.headers['content-type']
+
+		contentType = req.headers['content-type'] || '';
+		[contentType] = str.split ';'
+
+
+		return next() unless contentType is "application/xml"
 
 		buf = ""
 		req.setEncoding "utf8"
